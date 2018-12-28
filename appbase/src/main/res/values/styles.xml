@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ACAnim</item>
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ACAnim</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="ACAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_out</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/ACAnim</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="TranslucentTheme.NoAnim" parent="TranslucentTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
